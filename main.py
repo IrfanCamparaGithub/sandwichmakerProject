@@ -101,7 +101,7 @@ while user_input != "off":
     if SandwichMachine.check_resources(recipes[user_input]["ingredients"]):
         coins_collected = SandwichMachine.process_coins()
         if SandwichMachine.transaction_result(float(coins_collected), float(recipes[user_input]["cost"])):
-             print('Here  is $'+ str(round(coins_collected - recipes[user_input]["cost"], 2)) + ' in change.')
+             print('Here is $'+ str(round(coins_collected - recipes[user_input]["cost"], 2)) + ' in change.')
              SandwichMachine.make_sandwich(user_input, recipes[user_input]["ingredients"])
         else:
             print("Sorry that's not enough money. Money refunded.")
