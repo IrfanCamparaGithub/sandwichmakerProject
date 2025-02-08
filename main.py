@@ -108,5 +108,5 @@ while user_input != "off":
     else:
         for resource in resources.keys():
             if resources[resource] - recipes[user_input]["ingredients"][resource] < 0:
-                print("Sorry there is not enough" + " " + resource + ".")
+                print("Sorry there is not enough" + " " + resource + "")
                 break
